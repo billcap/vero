@@ -3,7 +3,7 @@ module Vero
     include Vero::Utility::Logger
 
     def self.default_context
-      @@default_context ||= Context.new
+      @default_context ||= Context.new
     end
 
     def self.init(&block)
